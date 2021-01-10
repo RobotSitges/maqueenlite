@@ -1,0 +1,12 @@
+basic.showIcon(IconNames.Ghost)
+basic.forever(function () {
+    basic.showString("T:")
+    basic.showNumber(Environment.octopus_BME280(Environment.BME280_state.BME280_temperature_C))
+    basic.showString("H:")
+    basic.showNumber(Environment.octopus_BME280(Environment.BME280_state.BME280_humidity))
+    basic.showString("P:")
+    basic.showNumber(Environment.octopus_BME280(Environment.BME280_state.BME280_pressure))
+    basic.showString("A:")
+    basic.showNumber(Environment.octopus_BME280(Environment.BME280_state.BME280_altitude))
+    basic.showString("T: " + Environment.octopus_BME280(Environment.BME280_state.BME280_temperature_C))
+})
